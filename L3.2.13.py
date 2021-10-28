@@ -31,8 +31,8 @@ class Tests(unittest.TestCase):
         # assert "Congratulations! You have successfully registered!" == self.welcome_text
 
     def test_reg2(self):
-        link2 = "http://suninjuly.github.io/registration2.html"#fffffff
-        browser = self.browser# webdriver.Chrome()
+        link2 = "http://suninjuly.github.io/registration2.html" #
+        browser = self.browser # webdriver.Chrome()
         browser.get(link2)
         self.input1 = browser.find_element(By.XPATH, "//input[@placeholder='Input your first name']")
         self.input1.send_keys("Ivan1")
